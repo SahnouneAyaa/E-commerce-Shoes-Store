@@ -19,7 +19,7 @@ function Footer() {
              in store . Get rewards</p>
           <div className='flex items-center justify-center gap-5 mt-8'>
             {socialMedia.map((icon)=>{
-              return <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
+              return <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full" key={icon.slt} >
                 <img src={icon.src} alt={icon.alt} width={24} height={24}/>
               </div>
             })}
@@ -27,11 +27,11 @@ function Footer() {
         </div>
         <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap '>
           {footerLinks.map((section)=>{
-            return <div>
+            return <div key={section.links}>
               <h4 className='text-white font-montserrat text-2xl leading-normal font-medium mb-6'>{section.title}</h4>
               <ul>
                 {section.links.map((link)=>{
-                  return <li className='mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer'><a href="">{link.name}</a></li>
+                  return <li key={link.name} className='mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer'><a href="">{link.name}</a></li>
                 }
                 )}
               </ul>
@@ -46,7 +46,7 @@ function Footer() {
        max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer '>
           <img src={copyrightSign} alt="" width={20} height={20} className='rounded-full m-0'/>
-          <p> Sahnoune AYA 2022 Copyright. All rights reserved.</p>
+          <p> NEOSTROPH 2022 Copyright. All rights reserved.</p>
         </div>
         <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
       </div>
