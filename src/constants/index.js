@@ -112,8 +112,8 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "sahnouneaya15@gmail.com", link: "sahnouneaya15@gmail.com" },
-            { name: "213782280038", link: "tel:+213782280038" },
+            { name: "randomuser888@email.com", link: "randomuser888@email.com" },
+            { name: "+1 (847) 529-6732", link: "tel:+1 (847) 529-6732" },
         ],
     },
 ];
